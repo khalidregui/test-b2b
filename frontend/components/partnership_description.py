@@ -304,7 +304,7 @@ def render_partnership_description(partnership_data: dict, company_sheet=None):
                 # Appel à la nouvelle route API
                 if company_sheet:
                     success = company_sheet.update_partnership_description(note_content.strip())
-                    if success:
+                    if len(success)>0:
                         st.session_state.partnership_saved_note = success
                         st.session_state.show_partnership_note_field = False
                         st.success("Description enregistrée avec succès")
