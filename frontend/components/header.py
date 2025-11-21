@@ -8,7 +8,7 @@ def render_header():
     <div class="header-black" style="background-color: #000000; color: #FFFFFF; padding: 20px 40px;">
         <div style="display: flex; align-items: center; gap: 20px;">
             <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Orange_logo.svg/240px-Orange_logo.svg.png"
+                src="../static/logo.svg"
                 width="80"
                 style="background: white; padding: 10px; border-radius: 4px;"
             >
