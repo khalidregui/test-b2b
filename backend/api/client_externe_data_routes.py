@@ -134,11 +134,8 @@ async def fetch_first_linkedin_profile(
         }
 
 def generate_conversation(conversation : str) -> str:
-    try :
-        send_conversation_to_dataiku(conversation)
-        result = read_description()
-    except: 
-        result = "Dataiku can not resume your text"
+    send_conversation_to_dataiku(conversation)
+    result = read_description()
     return result
 
 @router.get("/clients/{client_id:path}/scrapping_and_llm")
