@@ -1,0 +1,669 @@
+{
+  "4982028": {
+    "identity": {
+      "company_name": "Bank Of Africa",
+      "ceo": "Farid Bouri",
+      "activity": "Banks / Insurance",
+      "address": "Av. du Général Sangoulé Lamizana, Koulouba, Ouagadougou, Burkina Faso",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Av.+du+Général+Sangoulé+Lamizana,+Koulouba,+Ouagadougou,+Burkina+Faso",
+      "other_addresses": "No data available",
+      "country": "BF"
+    },
+    "contact": {
+      "name": "Lassiné Diawara",
+      "phone": "+226-25-30-70-00",
+      "email": "la.diawara@boa.bf"
+    },
+    "receivables": {
+      "status": "Up to date",
+      "amount": 0.0,
+      "average_age": 0,
+      "risk_level": "Low Risk"
+    },
+    "partnership": {
+      "start_date": 2021,
+      "description": "Bank of Africa Burkina Faso is a banking player with a network of more than 60 branches covering the entire territory and a strong orientation towards digital banking. The partnership covers today:",
+      "points": [
+        "High-speed and secure connectivity (Dedicated Internet, MPLS interconnection of branches, BIO access).",
+        "Banking mobility (Enterprise voice, Fleet mobile, SMS Banking for notifications and OTP).",
+        "Support for digital innovation, particularly on interoperability projects with Orange Money and the implementation of mobile banking services."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 1500000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 1200000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Flexible SD-WAN",
+        "amount": 800000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Business Internet",
+        "amount": 1600000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Business Mobile",
+        "amount": 1300000
+      },
+      {
+        "date": "2024-03-15",
+        "product": "Orange Business Internet",
+        "amount": 1550000
+      },
+      {
+        "date": "2024-03-15",
+        "product": "Orange Cloud for Business",
+        "amount": 600000
+      }
+    ],
+    "complaints": [
+      {
+        "title": "Billing reminder on links",
+        "description": "BOA operating by fiscal year, it is difficult for the client to justify this reminder in order to pay off its debt. The client believes that the responsibility lies with Orange (given the delay relating to this reminder) and wants a solution proposal that would suit both parties.",
+        "resolution": "A meeting was held with the client and all corrected invoices concerning the reminder were sent.",
+        "product": "Orange Business Internet",
+        "type": "billing"
+      }
+    ],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "FTTx: 1",
+          "Dedicated Internet: Headquarters",
+          "Office connect: 47 Branches",
+          "BIO: 11 lines",
+          "APN: 13",
+          "Business Box: 5",
+          "M2M: 26"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Captive Portal",
+          "Business Postpaid: 2",
+          "Business Flexi+",
+          "Business Privilege: 20",
+          "Business Prepaid: 6",
+          "Business Connect Tab",
+          "Bulk SMS"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "500-1,000 employees",
+        "linkedin_url": "https://www.linkedin.com/company/bank-of-africa",
+        "website_url": "https://www.bank-of-africa.net"
+      },
+      "partnership_summary": "Bank of Africa Burkina Faso has been a strategic partner of Orange since 2021, benefiting from a complete telecom infrastructure to support its 60+ branches. The partnership covers connectivity, mobility and digital innovation, with a particular focus on Orange Money interoperability.",
+      "news": {
+        "sector_context": [
+          "Increased international surveillance (FATF grey list): This constraint pushes banks like BOA to strengthen the security and transparency of their information systems.",
+          "Need for technological partnerships: Creates needs with reliable telecom players for network supervision, fraud management and compliance."
+        ],
+        "cybersecurity_focus": [
+          "Regional trend (Interpol 2025):",
+          "Business Email Compromise (BEC)",
+          "Network intrusions and phishing",
+          "Lack of response capacity (obsolete infrastructures)"
+        ],
+        "company_news": [
+          "Net banking product: Up 2.3% (14.2 billion FCFA).",
+          "Net profit: Down 16.6% (5.2 billion FCFA), due to a tense economic environment."
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["Internet backup link via VSAT"],
+        "upsell_cross_sell": ["ICT Solutions", "Orange Cyberdefense", "Advanced Cloud Solutions"]
+      }
+    }
+  },
+  "4983456": {
+    "identity": {
+      "company_name": "Coris Bank International",
+      "ceo": "Idrissa Nassa",
+      "activity": "Banks / Insurance",
+      "address": "Avenue de l'Indépendance, Sector 15, Ouagadougou, Burkina Faso",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Avenue+de+l'Indépendance,+Sector+15,+Ouagadougou",
+      "other_addresses": "Bobo-Dioulasso, Koudougou, Banfora",
+      "country": "BF"
+    },
+    "contact": {
+      "name": "Aminata Sawadogo",
+      "phone": "+226-25-50-86-00",
+      "email": "a.sawadogo@corisbank.bf"
+    },
+    "receivables": {
+      "status": "Up to date",
+      "amount": 0.0,
+      "average_age": 0,
+      "risk_level": "Low Risk"
+    },
+    "partnership": {
+      "start_date": 2019,
+      "description": "Coris Bank International is a major financial institution in Burkina Faso with strong regional presence. Partnership includes:",
+      "points": [
+        "Dedicated internet connectivity for 25 branches nationwide.",
+        "Mobile banking platform integration with Orange Money.",
+        "VoIP solutions for customer service centers.",
+        "Cybersecurity services for financial data protection."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 1100000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 800000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Business Internet",
+        "amount": 1200000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Cyberdefense",
+        "amount": 400000
+      }
+    ],
+    "complaints": [],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "Dedicated Internet: Headquarters + 25 branches",
+          "BIO: 8 lines",
+          "Business Box: 10",
+          "APN: 20"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Business VoIP: Call center",
+          "Business Privilege: 15",
+          "Bulk SMS"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "400-600 employees",
+        "linkedin_url": "https://www.linkedin.com/company/coris-bank",
+        "website_url": "https://www.corisbank.bf"
+      },
+      "partnership_summary": "Strategic partnership since 2019 focusing on digital transformation and financial inclusion in Burkina Faso.",
+      "news": {
+        "sector_context": [
+          "Digital banking expansion in rural areas",
+          "Mobile money integration with Orange Money"
+        ],
+        "cybersecurity_focus": [
+          "PCI DSS compliance implementation",
+          "Advanced fraud detection systems"
+        ],
+        "company_news": [
+          "Revenue growth: 18% increase in 2024",
+          "New branch openings in rural areas"
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["SD-WAN migration", "Cloud backup solutions"],
+        "upsell_cross_sell": ["Orange Cloud for Business", "Advanced Analytics"]
+      }
+    }
+  },
+  "4984789": {
+    "identity": {
+      "company_name": "UBA Burkina Faso",
+      "ceo": "Olumide Odusina",
+      "activity": "Banks / Insurance",
+      "address": "Avenue Charles de Gaulle, Zone du Bois, Ouagadougou, Burkina Faso",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Avenue+Charles+de+Gaulle,+Zone+du+Bois,+Ouagadougou",
+      "other_addresses": "Bobo-Dioulasso, Ouahigouya",
+      "country": "BF"
+    },
+    "contact": {
+      "name": "Moussa Traoré",
+      "phone": "+226-25-36-24-00",
+      "email": "m.traore@ubagroup.bf"
+    },
+    "receivables": {
+      "status": "Pending",
+      "amount": 150000.0,
+      "average_age": 12,
+      "risk_level": "Low Risk"
+    },
+    "partnership": {
+      "start_date": 2022,
+      "description": "UBA Burkina Faso is part of the pan-African UBA Group, focusing on digital banking excellence. Partnership covers:",
+      "points": [
+        "MPLS network for inter-branch connectivity.",
+        "Business mobility solutions for corporate clients.",
+        "Unified communications platform.",
+        "24/7 network monitoring and support."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 900000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 650000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Flexible SD-WAN",
+        "amount": 700000
+      }
+    ],
+    "complaints": [
+      {
+        "title": "Connectivity issues in rural branches",
+        "description": "Intermittent connectivity issues affecting branches in rural areas, impacting customer service quality.",
+        "resolution": "Signal boosters installed and backup connectivity established.",
+        "product": "Orange Business Internet",
+        "type": "technical"
+      }
+    ],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "MPLS: 15 branches",
+          "Dedicated Internet: Headquarters",
+          "BIO: 5 lines",
+          "Business Box: 8"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Business Postpaid: 12",
+          "Business Privilege: 8",
+          "Unified Communications: Headquarters"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "300-400 employees",
+        "linkedin_url": "https://www.linkedin.com/company/uba-group",
+        "website_url": "https://www.ubagroup.com"
+      },
+      "partnership_summary": "Recent partnership since 2022 with focus on expanding UBA's digital footprint in Burkina Faso.",
+      "news": {
+        "sector_context": [
+          "Pan-African banking expansion",
+          "Digital transformation initiatives"
+        ],
+        "cybersecurity_focus": [
+          "Multi-factor authentication implementation",
+          "Regular security audits"
+        ],
+        "company_news": [
+          "Branch expansion: 3 new branches planned for 2024",
+          "Digital services: Mobile app upgrade completed"
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["Cloud migration", "Enhanced security solutions"],
+        "upsell_cross_sell": ["Orange Cyberdefense", "Video conferencing solutions"]
+      }
+    }
+  },
+  "4986123": {
+    "identity": {
+      "company_name": "Burkina Mining Company",
+      "ceo": "Robert Johnson",
+      "activity": "Mining / Extractive Industries",
+      "address": "Kalsaka Mine Site, Yatenga Province, Burkina Faso",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Kalsaka+Mine+Site,+Yatenga+Province",
+      "other_addresses": "Ouagadougou Office: Sector 4",
+      "country": "BF"
+    },
+    "contact": {
+      "name": "Sarah Mitchell",
+      "phone": "+226-25-45-67-00",
+      "email": "s.mitchell@burkinamining.bf"
+    },
+    "receivables": {
+      "status": "Up to date",
+      "amount": 0.0,
+      "average_age": 0,
+      "risk_level": "Low Risk"
+    },
+    "partnership": {
+      "start_date": 2020,
+      "description": "Mining operation requiring robust connectivity in remote locations. Partnership includes:",
+      "points": [
+        "VSAT connectivity for remote mining sites.",
+        "Private network for operational communications.",
+        "IoT solutions for equipment monitoring.",
+        "Emergency communication systems."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 2000000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 1500000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "IoT Solutions",
+        "amount": 800000
+      }
+    ],
+    "complaints": [],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "VSAT: 3 remote sites",
+          "Dedicated Internet: Ouagadougou office",
+          "Private Network: Mining operations",
+          "BIO: 15 lines"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Business Privilege: 50",
+          "Emergency Communications",
+          "PTT Solutions"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "800-1,000 employees",
+        "linkedin_url": "https://www.linkedin.com/company/burkina-mining",
+        "website_url": "https://www.burkinamining.bf"
+      },
+      "partnership_summary": "Critical infrastructure partner for mining operations in remote areas of Burkina Faso.",
+      "news": {
+        "sector_context": [
+          "Gold mining expansion in Burkina Faso",
+          "Remote operations connectivity challenges"
+        ],
+        "cybersecurity_focus": [
+          "Industrial cybersecurity measures",
+          "SCADA system protection"
+        ],
+        "company_news": [
+          "Production increase: 15% growth in gold production",
+          "Safety record: Zero incidents for 200+ days"
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["5G private network", "Advanced IoT platform"],
+        "upsell_cross_sell": ["Orange Cloud for Business", "Edge computing solutions"]
+      }
+    }
+  },
+  "4985432": {
+    "identity": {
+      "company_name": "Banque Atlantique Côte d'Ivoire",
+      "ceo": "Mamadou Kone",
+      "activity": "Banks / Insurance",
+      "address": "Boulevard de la République, Plateau, Abidjan, Côte d'Ivoire",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Boulevard+de+la+République,+Plateau,+Abidjan",
+      "other_addresses": "Bouaké, San-Pédro, Yamoussoukro",
+      "country": "CI"
+    },
+    "contact": {
+      "name": "Fatou Traoré",
+      "phone": "+225-27-20-30-40-00",
+      "email": "f.traore@atlantique.ci"
+    },
+    "receivables": {
+      "status": "Up to date",
+      "amount": 0.0,
+      "average_age": 0,
+      "risk_level": "Low Risk"
+    },
+    "partnership": {
+      "start_date": 2019,
+      "description": "Banque Atlantique Côte d'Ivoire is a historic Orange partner with a strong national presence. The partnership includes:",
+      "points": [
+        "MPLS connectivity for all branches (35 sites).",
+        "Mobility solutions for field teams.",
+        "24/7 network security and monitoring services.",
+        "Digital banking platform integration."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 1200000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 900000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Business Internet",
+        "amount": 1350000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Cyberdefense",
+        "amount": 600000
+      },
+      {
+        "date": "2024-03-15",
+        "product": "Orange Cloud for Business",
+        "amount": 800000
+      }
+    ],
+    "complaints": [
+      {
+        "title": "Network latency issues",
+        "description": "High latency observed on inter-branch connections affecting real-time transactions and customer service quality.",
+        "resolution": "Network optimization completed and additional bandwidth allocated to critical sites.",
+        "product": "Orange Business Internet",
+        "type": "technical"
+      }
+    ],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "Dedicated Internet: Headquarters + 35 branches",
+          "MPLS: National interconnection",
+          "BIO: 12 lines",
+          "Business Box: 8",
+          "SD-WAN: 5 main sites"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Business Privilege: 25",
+          "Business Postpaid: 10",
+          "Business VoIP: Call center",
+          "Bulk SMS"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "800-1,200 employees",
+        "linkedin_url": "https://www.linkedin.com/company/banque-atlantique-cote-ivoire",
+        "website_url": "https://www.atlantique.ci"
+      },
+      "partnership_summary": "Banque Atlantique Côte d'Ivoire has been collaborating with Orange since 2019 to modernize its banking infrastructure across the country. The partnership focuses on digital transformation and customer experience enhancement.",
+      "news": {
+        "sector_context": [
+          "Digital transformation acceleration: Leading the digital banking revolution in West Africa.",
+          "Financial inclusion: Expanding services to rural areas through mobile banking solutions."
+        ],
+        "cybersecurity_focus": [
+          "Enhanced fraud detection systems",
+          "PCI DSS compliance implementation",
+          "Staff cybersecurity training programs"
+        ],
+        "company_news": [
+          "Revenue: 15% growth in fiscal year 2024.",
+          "Innovation: Launch of AI-powered customer service chatbot.",
+          "Expansion: Opening 10 new branches in rural areas."
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["Complete SD-WAN migration", "Advanced Cloud Solutions"],
+        "upsell_cross_sell": ["Orange Cyberdefense Premium", "IoT Solutions", "Data Analytics Platform"]
+      }
+    }
+  },
+  "4987654": {
+    "identity": {
+      "company_name": "Commercial Bank of Cameroon",
+      "ceo": "Jean-Paul Mbarga",
+      "activity": "Banks / Insurance",
+      "address": "Avenue Charles de Gaulle, Centre-ville, Douala, Cameroon",
+      "address_link": "https://www.google.com/maps/search/?api=1&query=Avenue+Charles+de+Gaulle,+Centre-ville,+Douala",
+      "other_addresses": "Yaoundé, Bafoussam, Garoua",
+      "country": "CM"
+    },
+    "contact": {
+      "name": "Marie Nguema",
+      "phone": "+237-233-42-50-00",
+      "email": "m.nguema@cbc.cm"
+    },
+    "receivables": {
+      "status": "Overdue",
+      "amount": 250000.0,
+      "average_age": 18,
+      "risk_level": "Moderate Risk"
+    },
+    "partnership": {
+      "start_date": 2020,
+      "description": "Commercial Bank of Cameroon is developing an ambitious digital transformation strategy with Orange. The partnership includes:",
+      "points": [
+        "Network infrastructure for 50 branches and business centers.",
+        "Mobility solutions for sales forces and field agents.",
+        "Unified communication platform for headquarters.",
+        "Digital payment solutions integration."
+      ]
+    },
+    "revenues": [
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Internet",
+        "amount": 1800000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business Mobile",
+        "amount": 1400000
+      },
+      {
+        "date": "2024-01-15",
+        "product": "Orange Business VoIP",
+        "amount": 500000
+      },
+      {
+        "date": "2024-02-15",
+        "product": "Orange Business Internet",
+        "amount": 1900000
+      },
+      {
+        "date": "2024-03-15",
+        "product": "Orange Flexible SD-WAN",
+        "amount": 1200000
+      }
+    ],
+    "complaints": [
+      {
+        "title": "Service interruptions during peak hours",
+        "description": "Frequent service interruptions during peak business hours affecting customer transactions and internal operations.",
+        "resolution": "Infrastructure upgrade completed and redundancy systems implemented.",
+        "product": "Orange Business Internet",
+        "type": "availability"
+      }
+    ],
+    "services": [
+      {
+        "category": "INTERNET",
+        "services": [
+          "Dedicated Internet: Headquarters + 2 main branches",
+          "Office connect: 50 Branches",
+          "SD-WAN: 8 main sites",
+          "BIO: 20 lines",
+          "APN: 30",
+          "Business Box: 12"
+        ]
+      },
+      {
+        "category": "VOICE",
+        "services": [
+          "Business VoIP: Headquarters + 3 branches",
+          "Business Privilege: 45",
+          "Business Postpaid: 15",
+          "Bulk SMS",
+          "Business Connect Tab",
+          "Conference solutions"
+        ]
+      }
+    ],
+    "scraping_llm": {
+      "identity_enrichment": {
+        "employees": "1,200-1,500 employees",
+        "linkedin_url": "https://www.linkedin.com/company/commercial-bank-cameroon",
+        "website_url": "https://www.cbc.cm"
+      },
+      "partnership_summary": "Commercial Bank of Cameroon focuses on technological innovation with Orange since 2020. The partnership aims to modernize banking infrastructure and improve customer experience through advanced telecom solutions across Central Africa.",
+      "news": {
+        "sector_context": [
+          "Central Africa banking leader: CBC positions itself as the leading digital bank in the CEMAC region.",
+          "Cross-border expansion: Projects to expand services to neighboring CEMAC countries.",
+          "Regulatory compliance: Adapting to new BEAC digital banking regulations."
+        ],
+        "cybersecurity_focus": [
+          "ISO 27001 certification achieved",
+          "Advanced threat detection systems deployed",
+          "Comprehensive cybersecurity training for all staff"
+        ],
+        "company_news": [
+          "Innovation: Launch of blockchain-based cross-border payment system.",
+          "Partnerships: Strategic alliance with Orange Money for mobile payments.",
+          "Growth: 22% increase in digital transactions in 2024."
+        ]
+      },
+      "potential": {
+        "ongoing_acquisitions": ["Complete SD-WAN migration", "Advanced video conferencing solutions", "Disaster recovery site"],
+        "upsell_cross_sell": ["Orange Cloud for Business", "Advanced backup solutions", "Orange Cyberdefense Premium", "IoT solutions for branch security"]
+      }
+    }
+  }
+}

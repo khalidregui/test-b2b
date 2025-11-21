@@ -1,0 +1,45 @@
+defaults:
+     api_url: "https://api.phantombuster.com/api/v2"
+global_concurrency_limiter:
+  max_concurrent_jobs: 3
+  min_delay_between_jobs: 0.0  # Seconds between heavy jobs
+sources:
+
+  - name: linkedin
+    plugin_type: linkedin
+    config_dict:
+      api_url: ${defaults.api_url}
+      api_key: ${oc.env:PHANTOMBUSTER_API_KEY}
+      session_cookie: ${oc.env:PHANTOMBUSTER_SESSION_COOKIE}
+      user_agent: ${oc.env:PHANTOMBUSTER_USER_AGENT}
+
+      phantoms:
+        url_finder_id: ${oc.env:URL_FINDER_ID}
+        company_scraper_id: ${oc.env:COMPANY_SCRAPER_ID}
+        activity_extractor_id: ${oc.env:ACTIVITY_EXTRACTOR_ID}
+
+      rate_limit:
+        max_calls_per_hour: 8
+        max_calls_per_day: 40
+        min_delay_between_calls: 90.0   # Seconds
+        max_concurrent_calls: 1
+        #enable_random_delay: false
+
+    enabled: true
+
+  - name: Sectorial context rss
+    plugin_type: rss
+    config_dict:
+      urls:
+        - "https://techcrunch.com/feed/"
+        - "https://thenextweb.com/feed/"
+
+    enabled: false
+
+  - name: cybersecurity context rss
+    plugin_type: rss
+    config_dict:
+      urls:
+        - "https://krebsonsecurity.com/feed/"
+
+    enabled: false

@@ -1,0 +1,112 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+      cache_from:
+        - b2b-backend:latest
+        - b2b-backend:dependencies
+      target: runtime
+    image: b2b-backend:latest
+    container_name: b2b-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
+      - ENVIRONMENT=development
+      - UVICORN_RELOAD=1
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=db-server
+      - DB_PORT=5432
+      - DB_NAME=${DB_NAME}
+      - PHANTOMBUSTER_API_KEY=${PHANTOMBUSTER_API_KEY}
+      - PHANTOMBUSTER_SESSION_COOKIE=${PHANTOMBUSTER_SESSION_COOKIE}
+      - PHANTOMBUSTER_USER_AGENT=${PHANTOMBUSTER_USER_AGENT}
+      - URL_FINDER_ID=${URL_FINDER_ID}
+      - COMPANY_SCRAPER_ID=${COMPANY_SCRAPER_ID}
+      - ACTIVITY_EXTRACTOR_ID=${ACTIVITY_EXTRACTOR_ID}
+      
+
+
+    volumes:
+      - ./backend:/app/backend
+      - ./config:/app/config
+      - backend_data:/app/data
+      - uv_cache:/cache/uv
+      - pip_cache:/root/.cache/pip
+    networks:
+      - b2b-network
+      - back-tier
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      db-server:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+      cache_from:
+        - b2b-frontend:latest
+        - b2b-frontend:dependencies
+      target: runtime
+    image: b2b-frontend:latest
+    container_name: b2b-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - PYTHONPATH=/app
+      - BACKEND_URL=http://backend:8000
+    volumes:
+      - ./frontend:/app/frontend
+      - ./config:/app/config
+      - frontend_data:/app/data
+      - uv_cache:/cache/uv
+      - pip_cache:/root/.cache/pip
+    networks:
+      - b2b-network
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db-server:
+    container_name: db-server
+    image: postgres:15-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-example}
+      POSTGRES_DB: ${DB_NAME:-b2b_meeting_assistant}
+    ports:
+      - "5432:5432"
+    networks:
+      - back-tier
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "${DB_USER:-postgres}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks:
+  b2b-network:
+    driver: bridge
+  back-tier:
+    driver: bridge
+
+volumes:
+  backend_data:
+  frontend_data:
+  uv_cache:
+  pip_cache:
+  postgres_data:

@@ -1,0 +1,135 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "b2b-meeting-assistant"
+authors = [
+  { name = "Amale EL HAMRI", email = "amale.elhamri@artefact.com" },
+  { name = "Zakaria JAADI", email = "zakaria.jaadi@artefact.com" },
+  { name = "Mohamed EL MARZOUQI", email = "mohamed.marzouqi@artefact.com" },
+  { name = "Khalid REGUI", email = "khalid.regui@artefact.com" },
+]
+description = "This project helps the sales team of a Telco company prepare their B2B client meetings by centralizing key insights, saving time, and providing personalized recommendations."
+version = "0.0.1"
+readme = "README.md"
+requires-python = "==3.9.*"
+dependencies = []
+
+[project.optional-dependencies]
+backend = [
+    "aiohttp<3.8",
+    "dataiku-api-client>=14.1.2",
+    "fastapi>=0.117.1",
+    "feedparser>=6.0.12",
+    "loguru>=0.7.3",
+    "omegaconf>=2.3.0",
+    "openpyxl>=3.0.10,<3.2.0",
+    "pandas>=2.3.2",
+    "psycopg2-binary>=2.9.0,<2.10.0",
+    "pydantic==2.9.2",
+    "python-dotenv>=1.1.1",
+    "requests>=2.32.5",
+    "scikit-learn>=1.6.1",
+    "sqlalchemy>=2.0.44",
+    "uvicorn>=0.36.0",
+]
+
+frontend = [
+    "omegaconf>=2.3.0",
+    "plotly==6.3.1",
+    "requests>=2.32.5",
+    "streamlit>=1.49.1",
+]
+
+dev = [
+    "aiohttp>=3.7.4.post0",
+    "bandit==1.8.3",
+    "codespell==2.4.0",
+    "feedparser>=6.0.12",
+    "nbstripout==0.6.1",
+    "pre-commit==4.2.0",
+    "pytest==8.3.5",
+    "pytest-asyncio>=1.2.0",
+    "pytest-cov>=7.0.0",
+    "pytest-mock>=3.15.1",
+    "ruff==0.11.2",
+    "python-dotenv>=1.1.1"
+]
+
+[[tool.uv.index]]
+url = "https://repos.tech.orange/artifactory/api/pypi/pythonproxy/simple/"
+explicit = true
+
+[project.urls]
+"Homepage" = "https://github.com/artefactory-ma/b2b-meeting-assistant"
+
+[tool.setuptools]
+packages = [
+  "config",
+  "tests",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+exclude = [
+  ".bzr",
+  ".direnv",
+  ".eggs",
+  ".git",
+  ".ruff_cache",
+  ".svn",
+  ".tox",
+  ".venv",
+  "__pypackages__",
+  "_build",
+  "buck-out",
+  "build",
+  "dist",
+  "node_modules",
+  "venv",
+]
+
+[tool.ruff.lint]
+select = [
+  "E", # Checks for pycodestyles errors
+  "W", # Checks for pycodestyles warnings
+  "F", # Checks for pyflakes errors
+  "I", # Checks imports (isort)
+  "N", # Pep-8 Naming conventions
+  "D", # Docstrings
+  "ARG", # Unused arguments
+  "RET", # Flake8 return simplification rules
+  "RUF", # Ruff specific code quality rules
+  # "S",   # bandit security rules
+  # "ANN", # Flake8 annotation rules
+  # "PTH", # Flake8 recommendation to use pathlib
+  # "PD", # Pandas-vet pandas best practices linting
+  # "SIM", Common code simplifications
+] # See: https://beta.ruff.rs/docs/rules/
+ignore = ["D100", "D101", "D107", "D203", "D213"]
+fixable=["ALL"]
+
+[tool.ruff.lint.per-file-ignores]
+"*__init__.py" = ["D", "F401"]
+"tests/*" = ["D", "S"]
+"frontend/*" = ["E501"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.ruff.lint.isort]
+known-first-party = ["config", "tests"]
+
+[tool.bandit]
+exclude_dirs = ["tests","venv",".venv"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+markers = [
+    "integration: marks tests as integration tests"
+]
