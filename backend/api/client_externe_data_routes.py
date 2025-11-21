@@ -11,6 +11,8 @@ from backend.services.rate_limiters.global_concurrency_limiter import global_con
 from backend.services.scrapping import pipeline
 from backend.services.dataiku.pipeline_writer import send_scraped_data_to_dataiku
 from backend.services.dataiku.readers import read_filtered_data
+from backend.services.dataiku.pipeline_writer import send_conversation_to_dataiku
+from backend.services.dataiku.readers import read_description
 
 from .cache_routes import load_excel_data
 
@@ -131,6 +133,13 @@ async def fetch_first_linkedin_profile(
             "activity": "Données indisponibles",
         }
 
+def generate_conversation(conversation : str) -> str:
+    try :
+        send_conversation_to_dataiku(conversation)
+        result = read_description()
+    except: 
+        result = "Dataiku can not resume your text"
+    return result
 
 @router.get("/clients/{client_id:path}/scrapping_and_llm")
 async def get_client_scraping_llm(
@@ -295,7 +304,7 @@ async def update_partnership_description(
         return {
             "success": True,
             "client_id": client_id,
-            "description": description,
+            "description": generate_conversation(description),
             "message": "Description mise à jour avec succès"
         }
         
