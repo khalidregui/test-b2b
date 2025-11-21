@@ -101,7 +101,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 uv.lock
 env/
@@ -138,3 +137,9 @@ secrets/*
 # Mac OS
 .DS_Store
 
+<<<<<<< HEAD
+=======
+# models weight
+models/
+data/
+>>>>>>> f99fb44ef7020c0e30cc06c85802a0d41cf9a6fa
