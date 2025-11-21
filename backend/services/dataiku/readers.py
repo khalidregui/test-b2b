@@ -41,4 +41,4 @@ def read_description():
     core_dataset = dataset.get_as_core_dataset()
     df = core_dataset.get_dataframe()
 
-    return df["conversation"].iloc[0]
+    return df["description"].iloc[0]
