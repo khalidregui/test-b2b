@@ -41,7 +41,7 @@ def render_search_bar():
                 search_query = st.text_input(
                     label="search_query",
                     value=st.session_state.get("last_search_query", ""),
-                    placeholder="Tapez pour rechercher (3, 3.487, BIZART...)",
+                    placeholder="Rechercher un client via son ID ou sa raison sociale",
                     key="search_query_input",
                     label_visibility="collapsed",
                     help="Tapez quelques lettres pour voir les suggestions",
