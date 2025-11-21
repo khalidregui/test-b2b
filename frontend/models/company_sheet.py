@@ -527,6 +527,9 @@ class CompanySheet:
             if result and result.get("success"):
                 print("🔍 DEBUG CompanySheet: Succès API - Mise à jour des données locales")
                 # Mettre à jour les données locales
+
+                description = result['description']
+                
                 if self.partnership_data:
                     self.partnership_data["description"] = description
                 else:
