@@ -14,8 +14,7 @@ COPY tests ./tests
 
 RUN uv sync --extra backend
 
-RUN pip install --upgrade pip
-RUN pip install "http://172.27.11.206:11200/public/packages/dataiku-internal-client.tar.gz"
+RUN /.venv/bin/pip install "http://172.27.11.206:11200/public/packages/dataiku-internal-client.tar.gz"
 
 FROM python:3.9-slim AS runtime
 
