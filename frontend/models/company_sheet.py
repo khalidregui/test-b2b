@@ -503,7 +503,7 @@ class CompanySheet:
         """
         self.load_all_data(fetch_linkedin=fetch_linkedin)
     
-    def update_partnership_description(self, description: str) -> bool:
+    def update_partnership_description(self, description: str) -> str:
         """Update partnership description via API.
         
         Args:
@@ -539,10 +539,10 @@ class CompanySheet:
                         "points": []
                     }
                 print("🔍 DEBUG CompanySheet: Données locales mises à jour")
-                return True
+                return description
             else:
                 print(f"🔍 DEBUG CompanySheet: Échec API - result={result}")
-                return False
+                return ""
             
         except Exception as e:
             print(f"❌ ERROR CompanySheet: Exception complète: {e}")
