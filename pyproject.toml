@@ -33,6 +33,7 @@ backend = [
     "scikit-learn>=1.6.1",
     "sqlalchemy>=2.0.44",
     "uvicorn>=0.36.0",
+    "dataiku-internal-client @ http://172.27.11.206:11200/public/packages/dataiku-internal-client.tar.gz"
 ]
 
 frontend = [
