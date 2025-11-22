@@ -52,19 +52,17 @@ def read_description():
     project = client.get_project(project_key)
     scenario = project.get_scenario(scenario_id)
     
-    time.sleep(7)
     scenario_run = scenario.get_last_runs()[0]
-    i = 1  
+    cenario_run.refresh()
+    
+    while not scenario_run.running:
+        cenario_run.refresh()
     
     while True:
         scenario_run.refresh()
         if scenario_run.running:
-            i = 2
             logger.info("Scenario is still running ...")
         else:
-            if i==1 :
-                i = 2
-                continue
             logger.info("Scenario is not running anymore")
             break
         time.sleep(3)
