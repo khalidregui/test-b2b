@@ -53,10 +53,10 @@ def read_description():
     scenario = project.get_scenario(scenario_id)
     
     scenario_run = scenario.get_last_runs()[0]
-    cenario_run.refresh()
+    scenario_run.refresh()
     
     while not scenario_run.running:
-        cenario_run.refresh()
+        scenario_run.refresh()
     
     while True:
         scenario_run.refresh()
