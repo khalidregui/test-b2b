@@ -207,8 +207,8 @@ async def get_client_scraping_llm(
                                     result["news"]["cybersecurity_focus"] = [summaries["cybersecurity context rss"]]
                                 
                                 # Remplacer company_news par "linkedin"
-                                if summaries.get("linkedin"):
-                                    result["news"]["company_news"] = [summaries["linkedin"]]
+                                if summaries.get("company news"):
+                                    result["news"]["company_news"] = [summaries["company news"]]
 
                             # Logique d'analyse des employés (conservée)
                             if (
