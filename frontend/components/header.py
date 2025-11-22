@@ -1,4 +1,6 @@
 import streamlit as st
+import base64
+from pathlib import Path
 
 logo_path = Path(__file__).parent / "static" / "logo.svg"
 # Convertir le logo en base64
