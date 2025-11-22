@@ -51,13 +51,14 @@ def read_description():
     client = DSSClient(dss_url, api_key)
     project = client.get_project(project_key)
     scenario = project.get_scenario(scenario_id)
-    
+
+    time.sleep(5)
     scenario_run = scenario.get_last_runs()[0]
-    scenario_run.refresh()
     
-    while not scenario_run.running:
-        scenario_run.refresh()
-    
+    #scenario_run.refresh()
+    #while not scenario_run.running:
+        #scenario_run.refresh()
+
     while True:
         scenario_run.refresh()
         if scenario_run.running:
