@@ -71,5 +71,5 @@ def read_description():
     dataset = project.get_dataset(dataset_name)
     core_dataset = dataset.get_as_core_dataset()
     df = core_dataset.get_dataframe()
-    logger.info(f"returned description : {df["description"].iloc[0]}")
+    logger.info(f"returned description : {df['description'].iloc[0]}")
     return df["description"].iloc[0]
