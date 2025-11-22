@@ -1,6 +1,7 @@
 import time
 
 from dataikuapi import DSSClient
+from loguru import logger
 
 
 def read_filtered_data():
@@ -12,11 +13,24 @@ def read_filtered_data():
     api_key = "dkuaps-SSMchnlBMcn5uoAQv5dBtI4b6zWD6hSX"
     project_key = "B2B_PROJECT_DATAIKU_MASTER"
     dataset_name = "filtered_data"
-
-    time.sleep(20)
-
+    scenario_id = "AUTOUPDATEFILTEREDDATA"
+    
     client = DSSClient(dss_url, api_key)
     project = client.get_project(project_key)
+    scenario = project.get_scenario(scenario_id)
+    
+    time.sleep(10)
+    scenario_run = scenario.get_last_runs()[0]
+    
+    while True:
+      scenario_run.refresh()
+      if scenario_run.running:
+        logger.info("Scenario is still running ...")
+      else:
+        logger.info("Scenario is not running anymore")
+        break
+      time.sleep(3)
+
     dataset = project.get_dataset(dataset_name)
     core_dataset = dataset.get_as_core_dataset()
 
@@ -32,11 +46,29 @@ def read_description():
     api_key = "dkuaps-SSMchnlBMcn5uoAQv5dBtI4b6zWD6hSX"
     project_key = "B2B_PROJECT_DATAIKU_MASTER"
     dataset_name = "description"
-
-    time.sleep(10)
-
+    scenario_id = "AUTOUPDATEDESCRIPTION"
+    
     client = DSSClient(dss_url, api_key)
     project = client.get_project(project_key)
+    scenario = project.get_scenario(scenario_id)
+    
+    time.sleep(7)
+    scenario_run = scenario.get_last_runs()[0]
+    i = 1  
+    
+    while True:
+        scenario_run.refresh()
+        if scenario_run.running:
+            i = 2
+            logger.info("Scenario is still running ...")
+        else:
+            if i==1 :
+                i = 2
+                continue
+            logger.info("Scenario is not running anymore")
+            break
+        time.sleep(3)
+
     dataset = project.get_dataset(dataset_name)
     core_dataset = dataset.get_as_core_dataset()
     df = core_dataset.get_dataframe()
