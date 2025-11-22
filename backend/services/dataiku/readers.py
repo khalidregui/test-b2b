@@ -52,7 +52,7 @@ def read_description():
     project = client.get_project(project_key)
     scenario = project.get_scenario(scenario_id)
 
-    time.sleep(5)
+    time.sleep(10)
     scenario_run = scenario.get_last_runs()[0]
     
     #scenario_run.refresh()
