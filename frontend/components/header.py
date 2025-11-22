@@ -11,7 +11,7 @@ with open(logo_path, "rb") as f:
 def render_header():
     """Render the application header with Orange logo and title."""
     st.markdown(
-        """
+        f"""
     <div class="header-black" style="background-color: #000000; color: #FFFFFF; padding: 20px 40px;">
         <div style="display: flex; align-items: center; gap: 20px;">
             <img
