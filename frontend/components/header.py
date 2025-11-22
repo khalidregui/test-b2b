@@ -1,9 +1,9 @@
 import streamlit as st
 
 logo_path = Path(__file__).parent / "static" / "logo.svg"
-    # Convertir le logo en base64
-    with open(logo_path, "rb") as f:
-        logo_base64 = base64.b64encode(f.read()).decode("utf-8")
+# Convertir le logo en base64
+with open(logo_path, "rb") as f:
+    logo_base64 = base64.b64encode(f.read()).decode("utf-8")
 
 
 def render_header():
